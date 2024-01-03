@@ -74,7 +74,7 @@ jobs:
              uname -a && \
              cat /etc/redhat-release && \
              sudo dnf install -y  dia && \
-	     dia -v
+             dia -v
       
 #        - name: Set the version
 #          id: version_number
