@@ -73,8 +73,9 @@ jobs:
           run: |
              uname -a && \
              cat /etc/redhat-release && \
-	     yum repolist --all
-#             1dnf install -y  dia && \
+             yum repolist --all
+
+#             dnf install -y  dia && \
 #             dia -v
 #      
 #        - name: Set the version
