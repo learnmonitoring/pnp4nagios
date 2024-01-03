@@ -61,7 +61,7 @@ jobs:
 #          path: ci/pnp4nagios-${{ env.VERSION }}.zip
 
   rpmbuild:
-      name: Build using Rocky Linux
+      name: Rocky Linux as docker container inside github ubuntu runner
       needs: Explore-GitHub-Actions
       runs-on: ubuntu-latest
       container:
@@ -73,9 +73,10 @@ jobs:
           run: |
              uname -a && \
              cat /etc/redhat-release && \
-             dnf install -y  dia && \
-             dia -v
-      
+	     yum repolist --all
+#             1dnf install -y  dia && \
+#             dia -v
+#      
 #        - name: Set the version
 #          id: version_number
 #          run: |
