@@ -19,10 +19,10 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
-  distbuild:
-    name: Checkout code and build tgz
-    runs-on: ubuntu-latest
-    steps:
+#  distbuild:
+#    name: Checkout code and build tgz
+#    runs-on: ubuntu-latest
+#    steps:
 #      - name: Set the version
 #        id: version_number
 #        run: |
