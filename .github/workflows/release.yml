@@ -74,10 +74,9 @@ jobs:
              uname -a && \
              cat /etc/redhat-release && \
              dnf install -y epel-release && \
-             dnf repolist --all
-
-#             dnf install -y  dia && \
-#             dia -v
+             dnf repolist --all && \
+             dnf install -y  dia && \
+             dia -v
 #      
 #        - name: Set the version
 #          id: version_number
