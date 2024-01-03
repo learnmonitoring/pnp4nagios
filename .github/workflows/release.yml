@@ -73,7 +73,7 @@ jobs:
           run: |
              uname -a && \
              cat /etc/redhat-release && \
-	     dnf install -y epel-release && \
+             dnf install -y epel-release && \
              dnf repolist --all
 
 #             dnf install -y  dia && \
