@@ -61,7 +61,7 @@ jobs:
 #          path: ci/pnp4nagios-${{ env.VERSION }}.zip
 
   rpmbuild:
-      name: Rocky Linux as docker container inside github ubuntu runner
+      name: Running Rocky Linux as docker container inside github ubuntu runner
       needs: Explore-GitHub-Actions
       runs-on: ubuntu-latest
       container:
@@ -69,11 +69,12 @@ jobs:
         options: --privileged
       steps:
         - name: OS info
-          id: os_info
+          id: dnf_info
           run: |
              uname -a && \
              cat /etc/redhat-release && \
-             yum repolist --all
+	     dnf install -y epel-release && \
+             dnf repolist --all
 
 #             dnf install -y  dia && \
 #             dia -v
