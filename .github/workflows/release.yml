@@ -73,7 +73,7 @@ jobs:
           run: |
              uname -a && \
              cat /etc/redhat-release && \
-             sudo dnf install -y  dia && \
+             dnf install -y  dia && \
              dia -v
       
 #        - name: Set the version
