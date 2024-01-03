@@ -62,7 +62,7 @@ jobs:
 
   rpmbuild:
       name: Build using Rocky Linux
-      needs: distbuild
+      needs: Explore-GitHub-Actions
       runs-on: ubuntu-latest
       container:
         image: rockylinux/rockylinux
