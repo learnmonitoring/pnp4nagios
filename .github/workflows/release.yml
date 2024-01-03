@@ -71,9 +71,9 @@ jobs:
         - name: OS info
           id: os_info
           run: |
-             uname -a 
-             cat /etc/redhat-release
-             sudo dnf install -y  dia
+             uname -a && \
+             cat /etc/redhat-release && \
+             sudo dnf install -y  dia && \
 	     dia -v
       
 #        - name: Set the version
