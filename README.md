@@ -5,6 +5,7 @@ The new/current place for the pnp4nagios organization is
 With this *particular* version residing in
    https://github.com/pnp4nagios/pnp4nagios
 
+Testing release branch
 
 This is a fork of [@lingej's original pnp4nagios package](https://github.com/lingej/pnp4nagios).
 
